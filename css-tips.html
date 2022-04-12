@@ -10,6 +10,26 @@
     border-radius: 50%;
     background: conic-gradient(red 0% 30%, green 30% 60%, blue 60% 100%);
   }
+
+  .gradient-border {
+    width: 300px;
+    height: 100px;
+    background: #000;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    z-index: -1;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff4262, #ffd70e, #ff38ac);
+  }
+
+
   </style>
 </head>
 <body>
@@ -19,6 +39,11 @@
     
     <h2>Pie Chart using 4 Lines of CSS (conic-gradient)</h2>
     <div class="pie-chart">       
+    </div>
+    <hr>
+
+    <h2>Gradient Border</h2>
+    <div class="gradient-border">   
     </div>
 
 </body>
