@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Learning JavaScript with Tweeple</title>
+<script>
+  /*
+    function sayHi(name) {
+      return `Hi there, ${name}`;
+    }
+
+    console.log(sayHi());
+    */
+
+    function Person (firstName, lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+
+    const member = new Person("Java", "Script");
+    Person.getFullName = function() {
+      return `${this.firstName}${this.lastName}`;
+    }
+
+    console.log(member.getFullName());
+</script>
+</head>
+<body>
+
+<h1>Learning JavaScript from Tweeple</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 

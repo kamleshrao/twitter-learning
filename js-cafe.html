@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Learning JavaScript with Tweeple</title>
+<script>
+
+//If you can read this code, you could
+//probably use a free cup of coffee
+
+var your_drink="LemonTea";
+
+var reverse = function(s) {
+  return s.split("").reverse().join("");
+}
+
+var barista = {
+  str1: "ion",
+  str2: reverse("rcne"),
+  str3: "ypt",
+  request: function(preference) {
+    return preference + " Secret Word: " + this.str2 +  this.str3 + this.str1;    
+  }
+};
+
+console.log (barista.request(your_drink));
+
+</script>
+</head>
+<body>
+
+<h1>Learning JavaScript from Tweeple</h1>
+<hr/>
+via: <a href="https://twitter.com/daboigbae/status/1841666826012344511" target="_blank">gbae the app developer</a>
+<h2>If you can read this code, you could probably use a free cup of coffee</h2>
+
+<img src="./images/js-cafe.jpeg"/>
+
+</body>
+</html> 
